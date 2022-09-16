@@ -12,8 +12,8 @@ function App() {
   }
   return (
     <Fragment>
-          <AddUser onAddUser={addUserHandler} />
-          <UserList users ={usersList} />
+          <AddUser onAddUser={addUserHandler} /> 
+          <UserList users ={usersList} />  {/*ইউজার লিস্ট এ ডাটা ডুকিয়ে তা ইউজার লিস্ট কমাপোনেন্ট এ পাঠানো হয়েছে (users)হিসেবে */}
     </Fragment>
   );
 }
