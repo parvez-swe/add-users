@@ -25,14 +25,14 @@ const AddUser = (props) =>{
                   })
                   return;
             }
-            if(+enteredUserAge < 1){
+            if(+enteredUserAge < 1){                   {/*here use + before enterUserAge for make string to number.because we did define it string at useState('')  */}
                   setError({
                         title: 'Invalid age',
                         message: 'Please enter a valid age (>0).'
                   })
                   return;
             }
-            props.onAddUser(enteredName, enteredUserAge);
+            props.onAddUser(enteredName, enteredUserAge);   {/*it has parse into app.js file*/}
             nameInputRef.current.value ='';
             ageInputRef.current.value ='';
 
